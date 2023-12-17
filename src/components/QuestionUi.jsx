@@ -1,13 +1,20 @@
 import React from "react";
 import { useThemeContext } from "./Theme";
 import { Link } from "react-router-dom";
+import { useQuestions } from "./QuestionsContext";
+import { questionsData } from "../data";
 
 const QuestionUi = ({ number, ques, state }) => {
   const { theme } = useThemeContext();
+  const { setInputValue, setQuestions } = useQuestions();
   return (
     <>
       {state ? (
         <Link
+          onClick={() => {
+            setInputValue("");
+            setQuestions(questionsData);
+          }}
           to={`/choose/${number}`}
           className={`shadow hover:scale-[1.03] ${
             theme === "light" ? " text-slate-800" : " text-slate-200"

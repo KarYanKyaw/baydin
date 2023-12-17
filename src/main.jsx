@@ -7,6 +7,7 @@ import { ThemeContextProvider } from "./components/Theme.jsx";
 import { QuestionsProvider } from "./components/QuestionsContext.jsx";
 import { NumberContextProvider } from "./components/NumberContext.jsx";
 import { AnswerContextProvider } from "./components/AnswerContext.jsx";
+import ScrollToTop from "./scrollToTop.js";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -14,6 +15,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <QuestionsProvider>
         <NumberContextProvider>
           <AnswerContextProvider>
+            <ScrollToTop />
             <App />
           </AnswerContextProvider>
         </NumberContextProvider>

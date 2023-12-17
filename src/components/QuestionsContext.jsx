@@ -8,6 +8,7 @@ export const QuestionsProvider = ({ children }) => {
 
   const [inputValue, setInputValue] = useState("");
 
+  // pagination
   const [currentPage, setCurrentPage] = useState(1);
   const [quesPerPage, setQuesPerPage] = useState(15);
   const lastQuesIndex = currentPage * quesPerPage;
@@ -46,6 +47,7 @@ export const QuestionsProvider = ({ children }) => {
     setCurrentPage,
     questionsToShow,
     handleClick,
+    setQuestions,
     searchQuestion,
     inputValue,
     setInputValue,
