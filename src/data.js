@@ -1,4 +1,4 @@
-export const questions = [
+export const questionsData = [
   {
     questionNo: 1,
     questionName: "ဇနီးမောင်နှံ၌ သားသမီးရကိန်းနှင့် ပတ်သက်သော အဟော။",
@@ -309,7 +309,7 @@ export const questions = [
   },
 ];
 
-export const answers = [
+export const answersData = [
   {
     questionNo: 1,
     answerNo: 1,
@@ -3902,7 +3902,7 @@ export const answers = [
       "ဘုရားစင်မှာ သောက်တော်ရေ(၉)ခွက်လှူပြီး သင့်ရဲ့လုပ်ငန်းကို စလိုက်ပါ။ အားလုံးအဆင်ပြေသွားပါလိမ့်မယ်။",
   },
 ];
-export const numbers = [
+export const numbersData = [
   "၃",
   "၁၀",
   "၅",
