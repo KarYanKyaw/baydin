@@ -7,7 +7,7 @@ const NavBar = () => {
   const { theme } = useThemeContext();
   return (
     <div
-      className={`p-5 shadow-lg ${
+      className={`p-3 sticky top-0 z-[1005] shadow-lg ${
         theme === "light" ? "bg-gray-300" : "bg-slate-800"
       } `}
     >

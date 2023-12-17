@@ -3903,85 +3903,328 @@ export const answersData = [
   },
 ];
 export const numbersData = [
-  "၃",
-  "၁၀",
-  "၅",
-  "၁၀",
-  "၇",
-  "၂",
-  "၅",
-  "၂",
-  "၇",
-  "၈",
-  "၆",
-  "၄",
-  "၅",
-  "၃",
-  "၁",
-  "၁၀",
-  "၈",
-  "၆",
-  "၇",
-  "၂",
-  "၉",
-  "၄",
-  "၉",
-  "၆",
-  "၉",
-  "၄",
-  "၁",
-  "၈",
-  "၅",
-  "၁၀",
-  "၆",
-  "၃",
-  "၈",
-  "၄",
-  "၁",
-  "၆",
-  "၃",
-  "၁",
-  "၉",
-  "၁",
-  "၉",
-  "၇",
-  "၉",
-  "၇",
-  "၅",
-  "၂",
-  "၇",
-  "၄",
-  "၁၀",
-  "၅",
-  "၂",
-  "၈",
-  "၃",
-  "၁၀",
-  "၇",
-  "၄",
-  "၉",
-  "၂",
-  "၉",
-  "၄",
-  "၉",
-  "၆",
-  "၁",
-  "၂",
-  "၁၀",
-  "၈",
-  "၇",
-  "၅",
-  "၃",
-  "၄",
-  "၂",
-  "၁၀",
-  "၁",
-  "၆",
-  "၃",
-  "၆",
-  "၁",
-  "၈",
-  "၃",
-  "၈",
-  "၅",
+  {
+    value: 3,
+    number: "၃",
+  },
+  {
+    value: 10,
+    number: "၁၀",
+  },
+  {
+    value: 5,
+    number: "၅",
+  },
+  {
+    value: 10,
+    number: "၁၀",
+  },
+  {
+    value: 7,
+    number: "၇",
+  },
+  {
+    value: 2,
+    number: "၂",
+  },
+  {
+    value: 5,
+    number: "၅",
+  },
+  {
+    value: 2,
+    number: "၂",
+  },
+  {
+    value: 7,
+    number: "၇",
+  },
+  {
+    value: 8,
+    number: "၈",
+  },
+  {
+    value: 6,
+    number: "၆",
+  },
+  {
+    value: 4,
+    number: "၄",
+  },
+  {
+    value: 5,
+    number: "၅",
+  },
+  {
+    value: 3,
+    number: "၃",
+  },
+  {
+    value: 1,
+    number: "၁",
+  },
+  {
+    value: 10,
+    number: "၁၀",
+  },
+  {
+    value: 8,
+    number: "၈",
+  },
+  {
+    value: 6,
+    number: "၆",
+  },
+  {
+    value: 7,
+    number: "၇",
+  },
+  {
+    value: 2,
+    number: "၂",
+  },
+  {
+    value: 9,
+    number: "၉",
+  },
+  {
+    value: 4,
+    number: "၄",
+  },
+  {
+    value: 9,
+    number: "၉",
+  },
+  {
+    value: 6,
+    number: "၆",
+  },
+  {
+    value: 9,
+    number: "၉",
+  },
+  {
+    value: 4,
+    number: "၄",
+  },
+  {
+    value: 1,
+    number: "၁",
+  },
+  {
+    value: 8,
+    number: "၈",
+  },
+  {
+    value: 5,
+    number: "၅",
+  },
+  {
+    value: 10,
+    number: "၁၀",
+  },
+  {
+    value: 6,
+    number: "၆",
+  },
+  {
+    value: 3,
+    number: "၃",
+  },
+  {
+    value: 8,
+    number: "၈",
+  },
+  {
+    value: 4,
+    number: "၄",
+  },
+  {
+    value: 1,
+    number: "၁",
+  },
+  {
+    value: 6,
+    number: "၆",
+  },
+  {
+    value: 3,
+    number: "၃",
+  },
+  {
+    value: 1,
+    number: "၁",
+  },
+  {
+    value: 9,
+    number: "၉",
+  },
+  {
+    value: 1,
+    number: "၁",
+  },
+  {
+    value: 9,
+    number: "၉",
+  },
+  {
+    value: 7,
+    number: "၇",
+  },
+  {
+    value: 9,
+    number: "၉",
+  },
+  {
+    value: 7,
+    number: "၇",
+  },
+  {
+    value: 5,
+    number: "၅",
+  },
+  {
+    value: 2,
+    number: "၂",
+  },
+  {
+    value: 7,
+    number: "၇",
+  },
+  {
+    value: 4,
+    number: "၄",
+  },
+  {
+    value: 10,
+    number: "၁၀",
+  },
+  {
+    value: 5,
+    number: "၅",
+  },
+  {
+    value: 2,
+    number: "၂",
+  },
+  {
+    value: 8,
+    number: "၈",
+  },
+  {
+    value: 3,
+    number: "၃",
+  },
+  {
+    value: 10,
+    number: "၁၀",
+  },
+  {
+    value: 7,
+    number: "၇",
+  },
+  {
+    value: 4,
+    number: "၄",
+  },
+  {
+    value: 9,
+    number: "၉",
+  },
+  {
+    value: 2,
+    number: "၂",
+  },
+  {
+    value: 9,
+    number: "၉",
+  },
+  {
+    value: 4,
+    number: "၄",
+  },
+  {
+    value: 9,
+    number: "၉",
+  },
+  {
+    value: 6,
+    number: "၆",
+  },
+  {
+    value: 1,
+    number: "၁",
+  },
+  {
+    value: 2,
+    number: "၂",
+  },
+  {
+    value: 10,
+    number: "၁၀",
+  },
+  {
+    value: 8,
+    number: "၈",
+  },
+  {
+    value: 7,
+    number: "၇",
+  },
+  {
+    value: 5,
+    number: "၅",
+  },
+  {
+    value: 3,
+    number: "၃",
+  },
+  {
+    value: 4,
+    number: "၄",
+  },
+  {
+    value: 2,
+    number: "၂",
+  },
+  {
+    value: 10,
+    number: "၁၀",
+  },
+  {
+    value: 1,
+    number: "၁",
+  },
+  {
+    value: 6,
+    number: "၆",
+  },
+  {
+    value: 3,
+    number: "၃",
+  },
+  {
+    value: 6,
+    number: "၆",
+  },
+  {
+    value: 1,
+    number: "၁",
+  },
+  {
+    value: 8,
+    number: "၈",
+  },
+  {
+    value: 3,
+    number: "၃",
+  },
+  {
+    value: 8,
+    number: "၈",
+  },
+  {
+    value: 5,
+    number: "၅",
+  },
 ];

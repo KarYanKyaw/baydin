@@ -1,16 +1,16 @@
 import React from "react";
-import NavBar from "./components/NavBar";
-import Hero from "./components/Hero";
 import Home from "./components/Home";
-import QuestionSection from "./components/QuestionSection";
+import { Route, Routes } from "react-router-dom";
+import NumbersPage from "./components/NumbersPage";
+import AnswerPage from "./components/AnswerPage";
 
 const App = () => {
   return (
-    <div className="">
-      <NavBar />
-      <Home />
-      <QuestionSection />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/choose/:id" element={<NumbersPage />} />
+      <Route path="/ques/:ques/answer/:value" element={<AnswerPage />} />
+    </Routes>
   );
 };
 
