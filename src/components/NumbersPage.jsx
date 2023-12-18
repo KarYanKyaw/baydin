@@ -18,20 +18,20 @@ const NumbersPage = () => {
   ).questionName;
 
   return (
-    <>
+    <div
+      className={`min-h-screen ${
+        theme == "dark" && "bg-slate-700"
+      } flex justify-between flex-col my-auto`}
+    >
       <NavBar />
-      <div
-        className={`min-h-screen  flex flex-col items-center gap-5 py-8 ${
-          theme == "dark" && "bg-slate-700"
-        } `}
-      >
+      <div className="container flex justify-between gap-5 items-center flex-col my-5">
         <ChosenQuestionUi question={selectedQuestion} />
         <Procedure />
         <NumberGrid id={id} />
-        <ReChooseBtn />
+        <ReChooseBtn location={"number-grid"} />
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 

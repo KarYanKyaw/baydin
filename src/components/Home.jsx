@@ -9,19 +9,19 @@ import Footer from "./Footer";
 const Home = () => {
   const { theme } = useThemeContext();
   return (
-    <>
+    <div
+      className={`min-h-screen ${
+        theme == "dark" && "bg-slate-700"
+      } flex justify-between select-none flex-col my-auto`}
+    >
       <NavBar />
-      <div
-        className={`min-h-screen  flex flex-col gap-5 py-8 ${
-          theme == "dark" && "bg-slate-700"
-        } `}
-      >
+      <div className=" my-5">
         <Hero />
         <FormSection />
         <QuestionSection />
       </div>
-        <Footer/>
-    </>
+      <Footer />
+    </div>
   );
 };
 

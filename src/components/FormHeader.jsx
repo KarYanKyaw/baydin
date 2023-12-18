@@ -8,7 +8,7 @@ const FormHeader = ({ open, controlOpen }) => {
       onClick={() => controlOpen()}
       className={`${
         theme === "light" ? "bg-gray-500" : " bg-slate-200"
-      } select-none rounded cursor-pointer hover:opacity-80 flex justify-between items-center p-3`}
+      } select-none mb-3 rounded cursor-pointer hover:opacity-80 flex justify-between items-center p-3`}
     >
       <p
         className={`text-lg md:text-xl  ${

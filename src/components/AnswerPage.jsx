@@ -8,6 +8,7 @@ import { useAnswers } from "./AnswerContext";
 import ReChooseBtn from "./ReChooseBtn";
 import AnswerUi from "./AnswerUi";
 import Footer from "./Footer";
+import HawTan from "./HawTan";
 
 const AnswerPage = () => {
   const { ques, value } = useParams();
@@ -23,26 +24,21 @@ const AnswerPage = () => {
   console.log(ques, value);
   return (
     <>
-      <NavBar />
       <div
-        className={` min-h-screen  flex flex-col items-center py-8 gap-5 ${
+        className={`min-h-screen ${
           theme == "dark" && "bg-slate-700"
-        } `}
+        } flex justify-between select-none flex-col my-auto`}
       >
-        <div className=" flex items-center flex-col gap-5">
+        <NavBar />
+        <div className="container animate__animated animate__backInDown flex justify-center items-center flex-col gap-5 my-5">
           <ChosenQuestionUi question={question} />
-          <p
-            className={` ${
-              theme === "light" ? " text-slate-800" : " text-slate-200"
-            } text-lg opacity-80`}
-          >
-            အတွက်ဟောတမ်းမှာ
-          </p>
+          <HawTan />
           <AnswerUi answer={answer} />
-          <ReChooseBtn />
+          <ReChooseBtn location={"answer"} />
         </div>
+        <Footer />
+      
       </div>
-      <Footer />
     </>
   );
 };

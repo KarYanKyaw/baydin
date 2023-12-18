@@ -10,7 +10,7 @@ const QuestionSection = () => {
   const { theme } = useThemeContext();
 
   return (
-    <div className="container flex flex-col gap-7">
+    <div className="container flex flex-col gap-3">
       <QuestionHeader />
       <ul>
         {questionsToShow.length === 0 ? (

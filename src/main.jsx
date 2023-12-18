@@ -7,6 +7,7 @@ import { ThemeContextProvider } from "./components/Theme.jsx";
 import { QuestionsProvider } from "./components/QuestionsContext.jsx";
 import { NumberContextProvider } from "./components/NumberContext.jsx";
 import { AnswerContextProvider } from "./components/AnswerContext.jsx";
+import Swal from "sweetalert2";
 import ScrollToTop from "./scrollToTop.js";
 
 ReactDOM.createRoot(document.getElementById("root")).render(

@@ -10,7 +10,7 @@ const FormSection = () => {
 
 
   return (
-    <section className="container flex flex-col gap-3">
+    <section className="container mt-5">
       <FormHeader open={open} controlOpen={controlOpen} />
       <FormUi open={open} />
     </section>

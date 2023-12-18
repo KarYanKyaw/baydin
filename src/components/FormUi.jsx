@@ -15,7 +15,7 @@ const FormUi = ({ open }) => {
 
   return (
     open && (
-      <div className="min-w-full grid grid-cols-12">
+      <div className="min-w-full mb-3 grid grid-cols-12">
         <input
           ref={inputRef}
           value={inputValue}

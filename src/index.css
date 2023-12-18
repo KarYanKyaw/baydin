@@ -1,7 +1,12 @@
+@import "animate.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .active {
   @apply bg-slate-800;
+}
+
+.swal2-loader {
+  border-color: #5b281d rgba(0, 0, 0, 0) #5b281d rgba(0, 0, 0, 0);
 }
