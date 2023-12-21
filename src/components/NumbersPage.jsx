@@ -13,6 +13,8 @@ const NumbersPage = () => {
   const { id } = useParams();
   const { theme } = useThemeContext();
   const { questions } = useQuestions();
+  console.log(questions);
+  
   const selectedQuestion = questions.find(
     (el) => el.questionNo == id
   ).questionName;

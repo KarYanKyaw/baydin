@@ -4,7 +4,22 @@ import { questionsData } from "../data";
 const Questions = createContext();
 
 export const QuestionsProvider = ({ children }) => {
-  const [questions, setQuestions] = useState(questionsData);
+  const [questions, setQuestions] = useState([]);
+  
+  const [isLoading, setIsLoading] = useState(true);
+
+  const dataFetching = async () => {
+    const res = await fetch("http://localhost:3000/questions");
+    const data = await res.json();
+    setQuestions(data);
+    setIsLoading(!isLoading);
+    console.log(questions);
+  };
+
+  useEffect(() => {
+    dataFetching();
+  }, []);
+  console.log(questions);
 
   const [inputValue, setInputValue] = useState("");
 
@@ -52,6 +67,7 @@ export const QuestionsProvider = ({ children }) => {
     inputValue,
     setInputValue,
     pages,
+    isLoading,
   };
   return <Questions.Provider value={data}>{children}</Questions.Provider>;
 };
